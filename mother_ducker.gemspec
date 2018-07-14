@@ -3,7 +3,7 @@ Gem::Specification.new do |gem|
   gem.summary = "some random summary for now"
 
   gem.version = "1.0.2"
-  gem.files = `git ls-files`.split($\)
+  gem.files = Dir['lib/**/*']
   gem.executables = ["motherducker"]
 
   gem.author = ['Victor Korelsky']

@@ -1,21 +1,7 @@
+require "yaml"
+
 module MotherDucker
-
-
   class StrategyCoordinator
-      TEXT_ARRAY = [ "Get comfortable",
-        "Relax your body by releasing any areas of tension",
-        "You're at a hackathon... You've been coding for hours...",
-        "Forget about bugs... Forget about method errors...",
-        "Close your eyes...",
-        "Breathe in deeply , drawing air fully into your lungs....",
-        "And release the air...",
-        "Breathe in again, slowly....",
-        "Out.....🌬",
-        "In.....",
-        "Become more and more relaxed with each breath...",
-        "Out..... 😤😤😤",
-        "🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈"
-      ]
 
     def initialize
       @meditation_used = false
@@ -28,24 +14,24 @@ module MotherDucker
       elsif !(@debugging_used)
         debug
       else
-        puts "we did what we could ! maybe take a nap ? or look at memes?"
+        puts "we did all we could ! maybe take a nap ? or look at memes?"
       end
     end
 
     def meditate
       emoji_array = ["🌬", "😤", "🌈"]
+      text_array = MotherDucker::MEDITATION_TEXT
 
       puts "I think some meditation would be useful. Let me guide you through it"
 
-      TEXT_ARRAY.each do |sentence|
+      text_array.each do |sentence|
           sleep_with_dots(3)
           puts sentence
-          speech_sentence = sentence.split.reject { |word| emoji_array.include?(word.chomp) }
-
-          # %x(say "#{speech_sentence}")
+          %x(say "#{sentence}")
       end
+
       animation_with_a_great_final_frame
-      puts "Hope that was helpful"
+      puts "Thanks. I hope that helped you relax"
 
       @meditation_used = true
     end
@@ -61,7 +47,7 @@ module MotherDucker
     end
 
     def parse_error(error)
-      if message.match(/undefined method/)
+      if error.match(/undefined method/)
         line = /\:\d+\:/.match(message)[0].gsub(":", "")
         file_name = /\#\<\w+\:/.match(message)[0].gsub("#<", "").gsub(":", "")
         puts "\n"
