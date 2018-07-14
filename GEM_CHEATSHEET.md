@@ -49,3 +49,4 @@
 
 
  [guide](https://guides.rubygems.org/make-your-own-gem/)
+ [another, better guide](http://robdodson.me/how-to-write-a-command-line-ruby-gem/)
