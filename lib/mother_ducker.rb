@@ -16,10 +16,13 @@ module MotherDucker
             strategy_orchestrator = StrategyCoordinator.new(user)
 
             # call Strategy.strategize while user.satisfied == false
-            while user.satisfied == false
+            until user.satisfied
               # this method asks the user if he is happy currently ?
               user.enquire_satisfaction
               strategy_orchestrator.strategize
+
+              # fake
+              user.satisfied = true
             end
             # it will pick and execute a strategy from the set
 
