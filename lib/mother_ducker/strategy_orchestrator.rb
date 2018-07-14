@@ -9,10 +9,9 @@ module MotherDucker
     end
 
     def strategize
-      # if !(@meditation_used)
-      #   meditate
-      # els
-      if !(@debugging_used)
+      if !(@meditation_used)
+        meditate
+      elsif !(@debugging_used)
         debug
       else
         puts "we did all we could ! maybe take a nap ? or look at memes?"
