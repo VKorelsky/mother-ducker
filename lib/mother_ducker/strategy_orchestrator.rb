@@ -43,6 +43,7 @@ module MotherDucker
 
       parse_error(error)
 
+      puts "good ! You're doing better. I'm glad"
       @debugging_used = true
     end
 
