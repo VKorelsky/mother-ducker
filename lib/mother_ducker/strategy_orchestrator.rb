@@ -80,6 +80,9 @@ module MotherDucker
     end
 
     def animation_with_a_great_final_frame
+
+      db_path = File.join(__dir__, 'ascii_animations')
+
       arr = (0..90).to_a
       arr.delete_at(0)
       arr.delete_at(0)
@@ -93,7 +96,7 @@ module MotherDucker
       2.times do
         for i in arr
           puts "\033[2J"
-          File.foreach("db/ascii_animations/ascii_meditation/#{i}.txt") do |f|
+          File.foreach("#{db_path}#{i}.txt") do |f|
             puts f
           end
           sleep(0.1)
