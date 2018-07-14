@@ -1,0 +1,11 @@
+---> Overall FLOWCHART
+---> 3 general strategies
+	---> DISTRACTION
+		--> Meme therapy
+		--> 
+	---> DEBUGGING
+		--> Rubber duck
+		--> Binding.pry
+		--> 
+
+	---> RECOMMENDATIONS
