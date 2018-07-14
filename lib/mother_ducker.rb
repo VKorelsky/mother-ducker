@@ -25,6 +25,8 @@ module MotherDucker
               strategy_orchestrator.strategize
               puts ""
               puts "are you feeling better ? [ y | n ]"
+              
+              input = gets.chomp.downcase
               satisfied = true if (input == "y" || input == "yes")
             end
             # it will pick and execute a strategy from the set
