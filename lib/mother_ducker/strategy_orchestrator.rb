@@ -46,7 +46,7 @@ module MotherDucker
     end
 
     def parse_error(error)
-      if message.match(/undefined method/)
+      if error.match(/undefined method/)
         line = /\:\d+\:/.match(message)[0].gsub(":", "")
         file_name = /\#\<\w+\:/.match(message)[0].gsub("#<", "").gsub(":", "")
         puts "\n"
