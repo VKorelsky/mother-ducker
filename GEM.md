@@ -14,4 +14,10 @@ pushing the gem
 ```
   $ gem push {file_created_from_build}.gem
 ```
+
+# notes
+
+ - version can be hardcoded into the gemspec, will need to be bumped up as we go
+
+
  [guide](https://guides.rubygems.org/make-your-own-gem/)
