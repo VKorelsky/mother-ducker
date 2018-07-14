@@ -18,11 +18,13 @@ module MotherDucker
 
     def meditate
 
+
       @meditation_used = true
     end
 
     def debug
-      puts "Please copy and past the error which you are seeing:"
+      puts "What about some debugging?"
+      puts "copy and paste the error which you are seeing, I will help you understand it:"
       error = gets.chomp
 
       parse_error(error)

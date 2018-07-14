@@ -13,11 +13,18 @@ module MotherDucker
             # initiate a strategy class, passing it the user instance
             strategy_orchestrator = StrategyCoordinator.new
 
+            puts "Welcome to the MotherDucker ! I will help you relax and debug your code"
+            puts "On a scale of 1 to 10 ? How frustrated are you ?"
+
+            frustration = gets.chomp
+
+            puts "Ok ! Let's work through that"
+
             # call Strategy.strategize while user.satisfied == false
             until user.satisfied
               # this method asks the user if he is happy currently ?
-              user.enquire_satisfaction
               strategy_orchestrator.strategize
+              user.enquire_satisfaction
 
               # fake
               user.satisfied = true
