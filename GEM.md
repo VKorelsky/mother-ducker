@@ -1,13 +1,13 @@
 # Instructions for gem pushing
 
  - code goes in lib/
- - {file_name}.gemspec # metainfo for gem
+ - mother_ducker.gemspec # metainfo for gem
 
 # cheatsheet
 
 building the gem
 ```
-  $ gem build {file_name}.gemspec
+  $ gem build mother_ducker.gemspec
 ```
 
 pushing the gem

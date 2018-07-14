@@ -1,5 +1,5 @@
 class MotherDucker
-  # test to see if it works when installing the gem
+  # test to see if it works 
   self.works?
     true
   end

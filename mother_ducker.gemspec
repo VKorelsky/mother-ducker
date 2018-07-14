@@ -1,6 +1,8 @@
 Gem::Specification.new do |gem|
   gem.name = 'motherducker'
   gem.version = '0.0.0'
-  gem.files = ["lib/example.rb"]
+  gem.files = ["lib/mother_ducker.rb"]
   gem.summary = "some random summary for now"
+  gem.author = ['Victor Korelsky']
+  gem.licenses = ['MIT']
 end
