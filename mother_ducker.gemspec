@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name = 'motherducker'
-  gem.version = '0.0.0'
+  gem.version = '0.0.1'
   gem.files = ["lib/mother_ducker.rb"]
   # line for CLI action
   gem.executables = ["motherducker"]
