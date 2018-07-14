@@ -27,7 +27,7 @@ module MotherDucker
       text_array.each do |sentence|
           sleep_with_dots(3)
           puts sentence
-          %x(say "#{speech_sentence}")
+          %x(say "#{sentence}")
       end
 
       puts "Thanks. I hope that helped you relax"
