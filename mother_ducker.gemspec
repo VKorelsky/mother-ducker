@@ -1,12 +1,10 @@
-lib = File.expand_path("../lib", __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "test/version"
+require_relative "test/version"
 
 Gem::Specification.new do |gem|
   gem.name = 'motherducker'
   gem.summary = "some random summary for now"
 
-  gem.version = MotherDucker::VERSION
+  gem.version = "0.0.2"
   gem.files = `git ls-files`.split($\)
   gem.executables = ["motherducker"]
 
