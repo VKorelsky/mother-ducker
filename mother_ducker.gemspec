@@ -2,7 +2,7 @@ Gem::Specification.new do |gem|
   gem.name = 'motherducker'
   gem.summary = "some random summary for now"
 
-  gem.version = "1.1.0"
+  gem.version = "1.1.1"
   gem.files = Dir['lib/**/*']
   gem.executables = ["motherducker"]
 
