@@ -44,7 +44,7 @@ module MotherDucker
 
           # %x(say "#{speech_sentence}")
       end
-
+      animation_with_a_great_final_frame
       puts "Hope that was helpful"
 
       @meditation_used = true
@@ -91,6 +91,29 @@ module MotherDucker
         i += 0.5
       end
       puts ""
+    end
+
+    def animation_with_a_great_final_frame
+      arr = (0..90).to_a
+      arr.delete_at(0)
+      arr.delete_at(0)
+      arr.delete_at(6)
+      arr.delete_at(9)
+      arr.delete_at(24)
+      arr.delete_at(49)
+      arr.delete_at(72)
+      arr.delete_at(83)
+      arr.delete_at(82)
+      2.times do
+        for i in arr
+          puts "\033[2J"
+          File.foreach("db/ascii_animations/ascii_meditation/#{i}.txt") do |f|
+            puts f
+          end
+          sleep(0.1)
+          i += 1
+        end
+      end
     end
   end
 end
