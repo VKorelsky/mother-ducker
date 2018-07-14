@@ -9,9 +9,10 @@ module MotherDucker
     end
 
     def strategize
-      if !(@meditation_used)
-        meditate
-      elsif !(@debugging_used)
+      # if !(@meditation_used)
+      #   meditate
+      # els
+      if !(@debugging_used)
         debug
       else
         puts "we did all we could ! maybe take a nap ? or look at memes?"
@@ -46,8 +47,8 @@ module MotherDucker
       @debugging_used = true
     end
 
-    def parse_error(error)
-      if error.match(/undefined method/)
+    def parse_error(message)
+      if message.match(/undefined method/)
         line = /\:\d+\:/.match(message)[0].gsub(":", "")
         file_name = /\#\<\w+\:/.match(message)[0].gsub("#<", "").gsub(":", "")
         puts "\n"
