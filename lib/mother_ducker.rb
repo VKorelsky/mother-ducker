@@ -26,6 +26,7 @@ module MotherDucker
             end
             # it will pick and execute a strategy from the set
 
+            puts "thanks for using me! see you soon !"
         end
     end
 end
