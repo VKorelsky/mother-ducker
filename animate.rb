@@ -8,20 +8,31 @@ csv_file_path = "ascii/50.txt"
 
 def animation_with_a_great_final_frame
   result = ""
+  arr = (0..90).to_a
+  arr.delete_at(0)
+  arr.delete_at(0)
+  arr.delete_at(6)
+  arr.delete_at(9)
+  arr.delete_at(24)
+  arr.delete_at(49)
+  arr.delete_at(72)
+  arr.delete_at(82)
+  arr.delete_at(82)
   2.times do
-    i = 0
-    while i < 91
-      print "\033[2J"
-      if CSV.open("ascii/#{i}.rb", 'r') == ""
-          result = result + " " + i
-      end
+    for i in arr
+      # print "\033[2J"
+      puts "\033[2J"
+      # puts i
+      # if CSV.open("ascii/#{i}.rb", 'r') == ""
+      #     result = result + " " + i
+      # end
       File.foreach("ascii/#{i}.rb") do |f|
         if f.eql?("")
           result = result + " " + i
         end
         puts f
       end
-      sleep(0.03)
+      sleep(0.05)
       i += 1
     end
   end
