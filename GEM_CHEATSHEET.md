@@ -18,6 +18,12 @@
     $ rake release
   ```
 
+- check if gem is published
+
+```
+  $ gem list -r motherducker
+```
+
 - if version tag is not updated
 
   ```
