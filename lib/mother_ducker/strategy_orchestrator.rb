@@ -14,7 +14,7 @@ module MotherDucker
       elsif !(@debugging_used)
         debug
       else
-        puts "we did what we could ! maybe take a nap ? or look at memes?"
+        puts "we did all we could ! maybe take a nap ? or look at memes?"
       end
     end
 
