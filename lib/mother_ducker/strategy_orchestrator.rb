@@ -6,11 +6,10 @@ module MotherDucker
     end
 
     def strategize
-      # TODO
-      if !(@meditation_used)
-        meditate
-      elsif !(@debugging_used)
+      if !(@debugging_used)
         debug
+      elsif !(@meditation_used)
+        meditate
       else
         puts "we did what we could ! maybe take a nap ? or look at memes?"
       end
