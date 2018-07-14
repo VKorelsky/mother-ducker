@@ -1,5 +1,3 @@
-require_relative "test/version"
-
 Gem::Specification.new do |gem|
   gem.name = 'motherducker'
   gem.summary = "some random summary for now"
