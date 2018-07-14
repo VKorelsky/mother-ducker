@@ -65,7 +65,10 @@ module MotherDucker
           if answer_2 == "no"
             puts "Create a method named \"#{method_name}\" in your #{file_name} class."
           end
+        else
+          puts "Sorry, my AI failed to recognize this error :("
         end
+
       end
     end
 
