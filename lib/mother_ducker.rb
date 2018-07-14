@@ -25,9 +25,6 @@ module MotherDucker
               # this method asks the user if he is happy currently ?
               strategy_orchestrator.strategize
               user.enquire_satisfaction
-
-              # fake
-              user.satisfied = true
             end
             # it will pick and execute a strategy from the set
 
