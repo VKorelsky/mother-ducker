@@ -3,7 +3,6 @@
  - code goes in lib/
  - {file_name}.gemspec # metainfo for gem
 
-
 # cheatsheet
 
 building the gem
