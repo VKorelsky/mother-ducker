@@ -20,7 +20,7 @@ module MotherDucker
 
     def meditate
       emoji_array = ["🌬", "😤", "🌈"]
-      text_array_path = MotherDucker::MEDITATION_TEXT
+      text_array = MotherDucker::MEDITATION_TEXT
 
       puts "I think some meditation would be useful. Let me guide you through it"
 
