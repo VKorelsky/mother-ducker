@@ -10,10 +10,8 @@ module MotherDucker
             # hackish but who's checking ?
             # Build a user profile
             user = User.new
-            # this method call fills out our instance variables
-            user.build_profile
             # initiate a strategy class, passing it the user instance
-            strategy_orchestrator = StrategyCoordinator.new(user)
+            strategy_orchestrator = StrategyCoordinator.new
 
             # call Strategy.strategize while user.satisfied == false
             until user.satisfied

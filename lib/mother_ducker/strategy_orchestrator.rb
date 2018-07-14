@@ -1,7 +1,6 @@
 module MotherDucker
   class StrategyCoordinator
-    def initialize(user_instance)
-      @user = user_instance
+    def initialize
       @meditation_used = false
       @debugging_used = false
     end
