@@ -3,9 +3,4 @@
 # code for our executable
 require 'mother_ducker'
 
-# using the classes defined in the motherducker module
-# you run the code, it will
-  # Build a user profile
-  # initiate a strategy class, passing it the user instance
-  # call Strategy.strategize while user.satisfied == false
-  # it will pick and execute a strategy from the set 
+MotherDucker::Starter.launch
