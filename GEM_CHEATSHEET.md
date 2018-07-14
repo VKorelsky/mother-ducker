@@ -18,6 +18,12 @@
     $ rake release
   ```
 
+- if version tag is not updated
+
+  ```
+    $ gem yank motherducker -v VERSION
+  ```
+
 ## outdated
 - manually
 
