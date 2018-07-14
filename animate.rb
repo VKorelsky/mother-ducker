@@ -16,7 +16,7 @@ def animation_with_a_great_final_frame
   arr.delete_at(24)
   arr.delete_at(49)
   arr.delete_at(72)
-  arr.delete_at(82)
+  arr.delete_at(83)
   arr.delete_at(82)
   2.times do
     for i in arr
@@ -32,7 +32,7 @@ def animation_with_a_great_final_frame
         end
         puts f
       end
-      sleep(0.05)
+      sleep(0.1)
       i += 1
     end
   end
