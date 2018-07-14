@@ -26,7 +26,7 @@ def animation_with_a_great_final_frame
       # if CSV.open("ascii/#{i}.rb", 'r') == ""
       #     result = result + " " + i
       # end
-      File.foreach("ascii/#{i}.rb") do |f|
+      File.foreach("db/ascii_animations/ascii_meditation/#{i}.txt") do |f|
         if f.eql?("")
           result = result + " " + i
         end
