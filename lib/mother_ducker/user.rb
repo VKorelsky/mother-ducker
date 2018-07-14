@@ -1,7 +1,8 @@
 module MotherDucker
-  attr_accessor :satisfied
 
   class User
+    attr_accessor :satisfied
+    
     def initialize
       # set our user attributes in here
       @satisified = false
