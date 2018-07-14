@@ -1,7 +1,27 @@
-require "yaml"
-
 module MotherDucker
+
+
   class StrategyCoordinator
+      TEXT_ARRAY = [ "Get comfortable",
+        "Relax your body by releasing any areas of tension",
+        "You're at a hackathon... You've been coding for hours...",
+        "Forget about bugs... Forget about method errors...",
+        "Close your eyes...",
+        "Actually don't close your eyes...",
+        "Breathe deeply in, drawing air fully into your lungs....",
+        "And release the air...",
+        "Breathe in again, slowly....",
+        "And breathe out.....",
+        "Draw a deep breath in....",
+        "And out....",
+        "In.....",
+        "Out.....🌬",
+        "Become more and more relaxed with each breath...",
+        "In.....",
+        "Out..... 😤😤😤",
+        "🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈"
+      ]
+
     def initialize
       @meditation_used = false
       @debugging_used = false
@@ -19,13 +39,10 @@ module MotherDucker
 
     def meditate
       emoji_array = ["🌬", "😤", "🌈"]
-      file_path = "./m_text.yaml"
-
-      med_arr = YAML.load(open(file_path).read)
 
       puts "I think some meditation would be useful. Let me guide you through it"
 
-      med_arr.each do |sentence|
+      TEXT_ARRAY.each do |sentence|
           sleep_with_dots(3)
           puts sentence
           speech_sentence = sentence.split.reject { |word| emoji_array.include?(word.chomp) }
