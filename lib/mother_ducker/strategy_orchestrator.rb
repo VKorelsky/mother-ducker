@@ -96,7 +96,7 @@ module MotherDucker
       2.times do
         for i in arr
           puts "\033[2J"
-          File.foreach("#{db_path}#{i}.txt") do |f|
+          File.foreach("#{db_path}/#{i}.txt") do |f|
             puts f
           end
           sleep(0.1)
