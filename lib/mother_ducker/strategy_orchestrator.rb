@@ -1,3 +1,5 @@
+require "yaml"
+
 module MotherDucker
   class StrategyCoordinator
     def initialize
@@ -16,6 +18,20 @@ module MotherDucker
     end
 
     def meditate
+      emoji_array = ["🌬", "😤", "🌈"]
+      file_path = "./m_text.yaml"
+
+      med_arr = YAML.load(open(file_path).read)
+
+      puts "I think some meditation would be useful. Let me guide you through it"
+
+      med_arr.each do |sentence|
+          sleep_with_dots(3)
+          puts sentence
+          speech_sentence = sentence.split.reject { |word| emoji_array.include?(word.chomp) }
+
+          %x(say "#{speech_sentence}")
+      end
 
 
       @meditation_used = true
@@ -52,6 +68,16 @@ module MotherDucker
           end
         end
       end
+    end
+
+    def sleep_with_dots(seconds)
+      i = 0
+      while i < seconds
+        sleep(0.5)
+        print "."
+        i += 0.5
+      end
+      puts ""
     end
   end
 end
