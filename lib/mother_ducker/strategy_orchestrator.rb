@@ -7,7 +7,7 @@ module MotherDucker
         "You're at a hackathon... You've been coding for hours...",
         "Forget about bugs... Forget about method errors...",
         "Close your eyes...",
-        "Breathe deeply in, drawing air fully into your lungs....",
+        "Breathe in deeply , drawing air fully into your lungs....",
         "And release the air...",
         "Breathe in again, slowly....",
         "Out.....🌬",
@@ -42,9 +42,10 @@ module MotherDucker
           puts sentence
           speech_sentence = sentence.split.reject { |word| emoji_array.include?(word.chomp) }
 
-          %x(say "#{speech_sentence}")
+          # %x(say "#{speech_sentence}")
       end
 
+      puts "Hope that was helpful"
 
       @meditation_used = true
     end
