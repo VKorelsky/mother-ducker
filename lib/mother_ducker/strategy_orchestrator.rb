@@ -7,17 +7,12 @@ module MotherDucker
         "You're at a hackathon... You've been coding for hours...",
         "Forget about bugs... Forget about method errors...",
         "Close your eyes...",
-        "Actually don't close your eyes...",
         "Breathe deeply in, drawing air fully into your lungs....",
         "And release the air...",
         "Breathe in again, slowly....",
-        "And breathe out.....",
-        "Draw a deep breath in....",
-        "And out....",
-        "In.....",
         "Out.....🌬",
-        "Become more and more relaxed with each breath...",
         "In.....",
+        "Become more and more relaxed with each breath...",
         "Out..... 😤😤😤",
         "🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈 🌈"
       ]
