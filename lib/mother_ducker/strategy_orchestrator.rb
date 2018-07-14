@@ -81,7 +81,7 @@ module MotherDucker
 
     def animation_with_a_great_final_frame
 
-      db_path = File.join(__dir__, 'ascii_animations')
+      db_path = File.join(__dir__, 'ascii_animations/ascii_meditation')
 
       arr = (0..90).to_a
       arr.delete_at(0)
