@@ -16,7 +16,7 @@
         - executable.rb # entry point for the app, file which loads other files
       - executable.gemspec
       - Rakefile
-  ```
+    ```
 
   - Rakefile
     ```ruby
