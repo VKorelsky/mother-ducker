@@ -7,15 +7,15 @@
 # Modify a project to make it a gem
 
   - Folder structure (for terminal app)
-  ```bash
-    - bin/
-      - executable #name of program when run on terminal
-    - lib/
-      - executable/ # folder which holds the code for the gem
-          - version.rb # holds constant EXECUTABLE::VERSION
-      - executable.rb # entry point for the app, file which loads other files
-    - executable.gemspec
-    - Rakefile
+    ```bash
+      - bin/
+        - executable #name of program when run on terminal
+      - lib/
+        - executable/ # folder which holds the code for the gem
+            - version.rb # holds constant EXECUTABLE::VERSION
+        - executable.rb # entry point for the app, file which loads other files
+      - executable.gemspec
+      - Rakefile
   ```
 
   - Rakefile
