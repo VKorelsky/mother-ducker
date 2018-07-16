@@ -1,5 +1,3 @@
-require "yaml"
-
 module MotherDucker
   class StrategyCoordinator
 
@@ -19,7 +17,6 @@ module MotherDucker
     end
 
     def meditate
-      emoji_array = ["🌬", "😤", "🌈"]
       text_array = MotherDucker::MEDITATION_TEXT
 
       puts "I think some meditation would be useful. Let me guide you through it"
