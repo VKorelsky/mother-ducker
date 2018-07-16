@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-# code for our executable
 require 'mother_ducker'
 
 MotherDucker::Starter.launch
